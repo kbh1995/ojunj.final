@@ -805,12 +805,13 @@ to get the desired effect
                     
                             <!-- /.card -->
                           </div>
+                         </div>
                     </form>
 
                
                 </div>
                 </div>        <!-- 직원 신규 등록 모달 끝-->
-
+			
 
 
           </div>
