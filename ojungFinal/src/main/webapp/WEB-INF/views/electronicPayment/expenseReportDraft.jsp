@@ -25,7 +25,19 @@
 <jsp:include page="../common/nav.jsp"/>
 <jsp:include page="../common/sidebar.jsp"/>
 
-    <!-- Main content -->
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+
+     <!-- Main content -->
       <form class="form-horizontal">
         <section class="content">
           <div class="container-fluid">
@@ -35,8 +47,7 @@
                 <!-- Horizontal Form -->
                 <div class="card">
                   <div class="card-header bg-navy">
-                    <h3 class="card-title">기안서작성</h3>
-                   </div>
+                    <h3 class="card-title">기안서작성</h3></div>
                   </div>
                   <div style="width: 95%;">
 
@@ -342,18 +353,17 @@
   </section>
       </form>
   </div><!-- /.container-fluid -->
-  <!-- /.content -->
-  
-  
-  
-  <!-- /.content-wrapper -->
+  </div>
 
+
+  <!-- /.content-wrapper -->
+  <jsp:include page="../common/footer.jsp"/>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
   </aside>
-  <!-- /.control-sidebar -->g
+  <!-- /.control-sidebar -->
   <!-- ./wrapper -->
 
   <!-- 결재라인 -->
@@ -406,23 +416,6 @@
   </script>
 
  
-  <jsp:include page="../common/footer.jsp"/>
-<!-- ./wrapper -->
-
-<!-- REQUIRED SCRIPTS -->
-
-<!-- jQuery -->
-<script src="<%=request.getContextPath() %>/resources/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="<%=request.getContextPath() %>/resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE -->
-<script src="<%=request.getContextPath() %>/resources/dist/js/adminlte.js"></script>
-
-<!-- OPTIONAL SCRIPTS -->
-<script src="<%=request.getContextPath() %>/resources/plugins/chart.js/Chart.min.js"></script>
-<script src="<%=request.getContextPath() %>/resources/dist/js/demo.js"></script>
-<script src="<%=request.getContextPath() %>/resources/dist/js/pages/dashboard3.js"></script>
-
-
 </body>
+
 </html>

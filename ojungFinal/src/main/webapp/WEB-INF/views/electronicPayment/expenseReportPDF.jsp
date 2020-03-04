@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>지출품의서 pdf</title>
+    <title></title>
     <style type="text/css">
         .tg {
             border-collapse: collapse;
@@ -107,19 +107,16 @@
             height: 100%;
             float: left; 
         }
-
-
-        #third-first {
-            width: 100%;
-            height: 100%;
-            float: left;
-            /* position: relative; */
-        }
+        .tg  {border-collapse:collapse;border-spacing:0; width: 100%;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-0pky{border-color:black;text-align:center;vertical-align:middle;}
+        .tg .tg-0pky-price{text-align: right;}
     </style>
 </head>
 
 <body>
-    <h2 style="text-align: center;">품 의 서</h2>
+    <h2 style="text-align: center;">지출결의서</h2>
 
     <div id="wrapper">
         <!-- 첫 번째 div -->
@@ -128,7 +125,7 @@
                 <table class="tg">
                     <tr>
                         <th class="tg-cly1">문서번호</th>
-                        <td style="width: 150px;">12</td>
+                        <td style="width: 150px;">99</td>
                     </tr>
                     <tr>
                         <th class="tg-cly1">작성일자</th>
@@ -136,11 +133,11 @@
                     </tr>
                     <tr>
                         <th class="tg-cly1">신청부서</th>
-                        <td style="width: 150px;">경영지원팀</td>
+                        <td style="width: 150px;">인사팀</td>
                     </tr>
                     <tr>
                         <th class="tg-0lax">신청자</th>
-                        <td style="width: 150px;">이혜선</td>
+                        <td style="width: 150px;">한송희</td>
                     </tr>
                 </table>
             </div>
@@ -154,9 +151,9 @@
                         <th class="tg-baqh">사장</th>
                     </tr>
                     <tr>
-                        <td class="tg-nrix" style="height: 50px;"></td>
-                        <td class="tg-baqh" style="height: 50px;"></td>
-                        <td class="tg-baqh" style="height: 50px;"></td>
+                        <td class="tg-nrix"></td>
+                        <td class="tg-baqh"></td>
+                        <td class="tg-baqh"></td>
                     </tr>
                     <tr>
                         <td class="tg-nrix">2020/02/28</td>
@@ -170,57 +167,55 @@
         <hr>
         <!-- 두 번째 div -->
         <div>
-            
+            <table class="tg">
+                <tr>
+                  <th class="tg-0pky">지출금액</th>
+                  <td class="tg-0pky" colspan="3">일금 99,999,999 원</td>
+                </tr>
+                <tr>
+                  <th class="tg-0pky">제목</th>
+                  <td class="tg-0pky" colspan="3">00부서 00팀 신입사원 컴퓨터 및 주변장치 구매</td>
+                </tr>
+                <tr>
+                  <th class="tg-0pky" rowspan="5" style="vertical-align: middle;">내역</th>
+                  <th class="tg-0pky">적요</th>
+                  <th class="tg-0pky">금액</th>
+                  <th class="tg-0pky">비고</th>
+                </tr>
+                <tr>
+                  <td class="tg-0pky">컴퓨터 본체(조립)	</td>
+                  <td class="tg-0pky-price">1,000,000</td>
+                  <td class="tg-0pky">00부터 00팀 신입사원</td>
+                </tr>
+                <tr>
+                  <td class="tg-0pky">모니터(lg fld-9000)	</td>
+                  <td class="tg-0pky-price">428,000	</td>
+                  <td class="tg-0pky">00부터 00팀 신입사원</td>
+                </tr>
+                <tr>
+                  <td class="tg-0pky">tc-lc200	</td>
+                  <td class="tg-0pky-price">93,800</td>
+                  <td class="tg-0pky">키보드</td>
+                </tr>
+                <tr>
+                  <td class="tg-0pky">로지텍 wq-99		</td>
+                  <td class="tg-0pky-price">12,000	</td>
+                  <td class="tg-0pky">마우스</td>
+                </tr>
+                <tr>
+                  <td colspan="4"><p>위 금액을 청구하오니 결재바랍니다.	</p><br>
+                    <p style="text-align: center;">2020년 02월 29일</p>
+                    <p style="text-align: right;"><sub>영수인: 한송희(인)</sub></p>
+                </td>
+                  
+                </tr>
+               
+              </table>   
 
         </div>
 
         <!-- 세 번째 div -->
-        <div id="wrapper">
-            <div id="third-first" class="tg-wrap">
-                <table class="tg" style="width: 100%;">
-                    <tr>
-                        <th class="tg-0pky" style="width: 70px;">제목</th>
-                        <td class="tg-0pky" style="width: 200px;"></td>
-                        <th class="tg-0pky" style="width: 70px;">최종결재자</th>
-                        <td class="tg-0lax" style="width: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <th class="tg-0pky" style="width: 90px;">결재번호</th>
-                        <td class="tg-0pky"></td>
-                        <th class="tg-0pky" style="width: 90px;">품의번호</th>
-                        <td class="tg-0lax"></td>
-                    </tr>
-                    <tr>
-                        <th class="tg-0pky" style="width: 90px;">결재일</th>
-                        <td class="tg-0pky"></td>
-                        <th class="tg-0pky" style="width: 90px;">품의일</th>
-                        <td class="tg-0lax"></td>
-                    </tr>
-                    <tr>
-                        <th class="tg-0pky" colspan="4">결재자 부기사항(해당 부서장 및 상무 ● 전무)</th>
-                    </tr>
-                    <tr>
-                        <td class="tg-0lax" colspan="4" style="height: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <th class="tg-0pky" colspan="4">품 의 내 용</th>
-                    </tr>
-                    <tr>
-                        <td class="tg-0lax" colspan="4" style="height: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <th class="tg-0pky" colspan="4">지 시 사 항</th>
-                    </tr>
-                    <tr>
-                        <td class="tg-0lax" colspan="4" style="height: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <th class="tg-0pky" colspan="4" style="text-align: left;">※이 품의서는 기안자가 지정한 최종 결재자에게 필히 결재를 받아야 한다.</th>
-                    </tr>
-                  </table>
-            </div>
-
-        </div>
+        <div></div>
 
     </div>
 </body>

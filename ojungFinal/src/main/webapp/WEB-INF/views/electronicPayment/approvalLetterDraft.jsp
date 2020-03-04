@@ -25,7 +25,19 @@
 <jsp:include page="../common/nav.jsp"/>
 <jsp:include page="../common/sidebar.jsp"/>
 
-    <!-- Main content -->
+
+  <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
       <form class="form-horizontal">
         <section class="content">
           <div class="container-fluid">
@@ -35,8 +47,7 @@
                 <!-- Horizontal Form -->
                 <div class="card">
                   <div class="card-header bg-navy">
-                    <h3 class="card-title">기안서작성</h3>
-                   </div>
+                    <h3 class="card-title">기안서작성</h3></div>
                   </div>
                   <div style="width: 95%;">
 
@@ -47,7 +58,7 @@
                         <label for="inputPassword3" class="col-sm-2 col-form-label"
                           style="text-align: center;">제목</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputPassword3" placeholder="제목을 입력해주세요.">
+                          <input type="password" class="form-control" id="inputPassword3" placeholder="제목을 입력해주세요.">
                         </div>
                       </div>
                       <div class="form-group row">
@@ -57,11 +68,21 @@
                         </div>
                       </div>
 
+                      <div class="form-group mt-2">
+                        <div class="input-group">
+                          <label for="exampleInputFile" class="col-sm-2 col-form-label" style="text-align: center; width: 80%;">첨부</label>
+                          <div class="custom-file col-sm-10">
+                            <input type="file" class="form-control" id="exampleInputFile" style="border-radius: 50px;">
+                            <label class="custom-file-label" for="exampleInputFile" style="width: 100%;"></label>
+                          </div>
+                        </div>
+                      </div>
+
                       <div class="form-group row">
                         <label for="inputPassword3" class="col-sm-2 col-form-label"
                           style="text-align: center;">결재라인</label>
                         <div class="col-sm-10">
-                          <span id="elecLineSpan"></span>
+                          <span id="elecLineSpan" ></span>
                           <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default1"
                             style="width: 130px; float: right;">
                             선택
@@ -74,7 +95,7 @@
                           style="text-align: center;">결재구분</label>
                         <div class="col-sm-10">
                           <div class="col-sm-4">
-                            <p class="mt-1 ml-5">지출결의서</p>
+                            <p class="mt-1 ml-5">품의서</p>
                           </div>
                         </div>
                       </div>
@@ -220,93 +241,6 @@
                       </div>
                       <!-- /.modal -->
 
-                      <div class="form-group row" >
-                        <label class="col-sm-2 col-form-label" style="text-align: center;">합계 금액</label>
-                        <div class="col-sm-4">
-                          <input type="text" class="form-control float-left" size="20" style="width: 80%; margin: 0;float: left;" readonly>&nbsp;&nbsp; <sub>원(￦)</sub>                           
-                        </div>
-                        <script>
-                          function numberWithCommas(x) {
-                            
-                            console.log(x);
-                            x.value = x.value.replace(/[^0-9]/g,'');   // 입력값이 숫자가 아니면 공백
-                            x.value = x.value.replace(/,/g,'');          // ,값 공백처리
-                            $(x).val(x.value.replace(/\B(?=(\d{3})+(?!\d))/g, ",")); // 정규식을 이용해서 3자리 마다 , 추가 
-                          }
-                        </script>
-                      </div>
-
-                      <hr class="ml-5">
-
-
-                      <!-- 요소추가 적요 5, 금액2, 비고4, 삭제1-->
-                      <div class="form-group row ml-5" style="text-align: center;">
-                        <div class="col-sm-5 col-form-label"><b>적요</b></div>
-                        <div class="col-sm-2 col-form-label"><b>금액</b></div>
-                        <div class="col-sm-4 col-form-label"><b>비고</b></div>
-                        <div class="col-sm-1 col-form-label"></div>
-                      </div>
-                      <div  id="divRows">
-
-                      <div class="form-group row ml-5" style="text-align: center;">
-                       
-                        <div class="col-sm-5 col-form-label"><input type="text" class="form-control"  name="briefs"></div>
-                        <div class="col-sm-2 col-form-label"><input type="text" class="form-control" name="amounts" 
-                          style="width: 80%; margin: 0;float: left;"
-                          maxlength="15"
-                          onkeyup="numberWithCommas(this)"><sub>원(￦)</sub></div>
-                        <div class="col-sm-4 col-form-label"><input type="text" class="form-control" maxlength="20" name="remarks"></div>
-                        <div class="col-sm-1 col-form-label">
-                          <i class=" fas fa-plus mr-2" onclick="addDivRow();"></i>
-                        </div>
-                      </div>
-                      </div>
-
-                      <script>
-                          var count=1;
-                          
-                          function addDivRow(){
-
-                          var strRow = "<input type='hidden' id='divRow"+count+"'>";
-                          var strBrief = "<div class='col-sm-5 col-form-label'><input type='text' class='form-control'  name='briefs'></div>";
-                          var strAmount = "<div class='col-sm-2 col-form-label'><input type='text' class='form-control' name='amounts' style='width: 80%; margin: 0;float: left;' maxlength='15' onkeyup='numberWithCommas(this)' id='amount_"+count+"'><sub>원(￦)</sub></input></div>";
-                          var strRemark = "<div class='col-sm-4 col-form-label'><input type='text' class='form-control' maxlength='20' name='remarks' id='remark_"+count+"'></div>";
-                          var strClick = "<div class='col-sm-1 col-form-label'><i class='fas fa-plus mr-2' onclick='addDivRow();'></i><i class='fas fa-trash-alt' onclick='removeRow();' ></i></div>";
-                          
-                          var addDiv = document.getElementById("divRows");                          
-                          var addedDiv = document.createElement("div");
-                          addedDiv.id="row_"+count;
-                          addedDiv.className = "form-group row ml-5";
-                          addedDiv.style = "text-align:center";
-                          addedDiv.innerHTML=strRow+strBrief+strAmount+strRemark+strClick;
-                          addDiv.appendChild(addedDiv);
-                          
-                          count++;
-                          
-
-                          
-
-                        };
-                        function removeRow(){
-                          var addDiv = document.getElementById("divRows");                          
-                          if(count>1){
-                            var addedRow = document.getElementById("row_"+(--count));
-                            addDiv.removeChild(addedRow);
-                            console.log(count);
-                          }
-
-                        };
-
-                        function sum(){
-                          var output =0;
-                          var length = document.getElementsByName("amounts").length;
-                          console.log(length);
-                          //for(var i=0;i<) 
-                        };
-                      </script>
-                  
-                      
-
                       <hr class="ml-5">
                       <br>
 
@@ -315,7 +249,7 @@
                           <td colspan="3">&nbsp;&nbsp;</td>
                           <td>
                             <textarea class="textarea" placeholder="Place some text here"
-                              style="width: 99%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px; resize: none;"></textarea>
+                              style="width: 99%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px; resize: none;"></textarea>
                           </td>
                         </tr>
                       </table>
@@ -343,69 +277,12 @@
       </form>
   </div><!-- /.container-fluid -->
   <!-- /.content -->
-  
-  
-  
+  </div>
   <!-- /.content-wrapper -->
 
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->g
-  <!-- ./wrapper -->
-
-  <!-- 결재라인 -->
-  <script>
-    var arr = [];
-
-    $("input[name=elecLine]").on("click", function () {
-      arr.push($(this).val());
-    });
-
-    $("#elecSubmit").on("click", function () {
-      $("#elecLineSpan").html(arr.join(" , "));
-      $("#elecModalClose").click();
-    });
-  </script>
-  
-  <script>
-    $(function () {
-      //Enable check and uncheck all functionality
-      $('.checkbox-toggle').click(function () {
-        var clicks = $(this).data('clicks')
-        if (clicks) {
-          //Uncheck all checkboxes
-          $('.noticeList input[type=\'checkbox\']').prop('checked', false)
-          $('.checkbox-toggle .far.fa-check-square').removeClass('fa-check-square').addClass('fa-square')
-        } else {
-          //Check all checkboxes
-          $('.noticeList input[type=\'checkbox\']').prop('checked', true)
-          $('.checkbox-toggle .far.fa-square').removeClass('fa-square').addClass('fa-check-square')
-        }
-        $(this).data('clicks', !clicks)
-      });
-  })
-</script>  
-  <!-- AdminLTE for demo purposes -->
-  <script src="dist/js/demo.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      bsCustomFileInput.init();
-    });
-  </script>
 
 
-  <!-- bs-custom-file-input -->
-  <script src="plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      bsCustomFileInput.init();
-    });
-  </script>
-
- 
   <jsp:include page="../common/footer.jsp"/>
 <!-- ./wrapper -->
 

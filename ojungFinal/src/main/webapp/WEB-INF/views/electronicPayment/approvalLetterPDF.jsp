@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>지출품의서 pdf</title>
+    <title>지출품의서 PDF</title>
     <style type="text/css">
         .tg {
             border-collapse: collapse;
