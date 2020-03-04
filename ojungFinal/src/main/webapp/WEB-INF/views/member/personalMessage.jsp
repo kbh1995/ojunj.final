@@ -103,14 +103,13 @@
                                       <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">취소</button>
                                     </div>
                                   </div>
-                                  </div>
-                                </div>
-                                  <!-- /.card -->
-                                </div>
+                           
                           </form>
-                    </div>
-            </div> <!-- /.row-->
-          </div>
+                      </div>
+                                  <!-- /.card -->
+                   </div>
+                </div>
+
         </td>
                     <td>김주임</td>
                     <td>2020-02-29</td>
@@ -274,7 +273,7 @@
 
 
                                     <div class="col-md-5" style="text-align: left; overflow: scroll;">
-                                      <table class="table" style="height: 20px; width: 100%; overflow: scroll; border:1px solid rgba(176, 196, 222, 0.726)"">
+                                      <table class="table" style="height: 20px; width: 100%; overflow: scroll; border:1px solid rgba(176, 196, 222, 0.726)">
                                         <thead
                                           style="font-size: large; font-weight: bold; background-color: rgba(176, 196, 222, 0.726);">
                                           <th>수신인 선택</th>
@@ -354,7 +353,7 @@
       </div>
       <!-- /.content-wrapper -->
     </div>
-
+</div>
 
 
 

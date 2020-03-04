@@ -3,19 +3,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>(주) 오정상사 그룹웨어 - 전자결재 </title>
- <!-- Tell the browser to be responsive to screen width -->
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Font Awesome -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+  <title>(주) 오정상사 인트라넷 </title>
+
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-</head>
+
+
+
+<style>
+.fixedHeader {
+	position: sticky;
+	top: 0;
+  background-color: lightsteelblue;
+}
+</style>
+
 <body>
 
 
@@ -37,8 +49,7 @@
     <!-- /.content-header -->
 
 
-
-<!-- Main content -->
+     <!-- Main content -->
       <div class="content" >
         <div class="container-fluid" >
           <div class="row">
@@ -127,8 +138,8 @@
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content" id="modal-12">
-                    <form class="form-signin card-body" method="POST" action="">
-         
+                    <form class="form-signin card-body" method="POST">
+                      <div id="employee-management" class="card-body"></div>
                         <div class="card">
                           <div class="card-header bg-navy">
                             <h3 class="card-title">반려</h3>
@@ -179,11 +190,11 @@
               이대리
               <span class="badge badge-info badge-pill">기안</span>
             </li>
-            <p style="color: lightslategrey; font-size: small;">2020.03.04</p>
+            <p style="font-size: small; color:lightslategrey;">2020.03.04</p>
   
-            
-            <i class="fas fa-angle-down fa-2x mt-2 mb-2 ml-5" ></i>
-  
+            <div style="align-items: center;" class="pl-5 ml-5" >
+            <i class="fas fa-angle-down fa-2x mb-2 pl-5 " ></i>
+          </div>
   
             <li class="list-group-item d-flex justify-content-between align-items-center">
               윤과장
@@ -191,7 +202,9 @@
             </li>
             <p style="color: lightslategrey; font-size: small;">2020.03.04</p>
   
-            <i class="fas fa-angle-down fa-2x mb-2 ml-5"></i>
+            <div style="align-items: center;" class="pl-5 ml-5" >
+              <i class="fas fa-angle-down fa-2x mb-2 pl-5 " ></i>
+            </div>
   
             <li class="list-group-item d-flex justify-content-between align-items-center">
              홍부장
@@ -199,7 +212,9 @@
             </li>
             <p style="color: lightslategrey; font-size: small;">2020.03.04</p>
   
-            <i class="fas fa-angle-down fa-2x mb-2 ml-5"></i>
+            <div style="align-items: center;" class="pl-5 ml-5" >
+              <i class="fas fa-angle-down fa-2x mb-2 pl-5 " ></i>
+            </div>
   
             <li class="list-group-item d-flex justify-content-between align-items-center">
              김사장
@@ -271,10 +286,8 @@
   </div>
   <!-- /.content-wrapper -->
 </div>
+
 </div>
-
-
-
   <jsp:include page="../common/footer.jsp"/>
 <!-- ./wrapper -->
 
