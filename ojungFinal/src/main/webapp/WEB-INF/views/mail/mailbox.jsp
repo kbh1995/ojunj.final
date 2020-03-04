@@ -49,7 +49,7 @@
 			<section class="content">
 				<div class="row">
 					<div class="col-md-2">
-						<a href="MailWrite_sohee.html"
+						<a href="<%=request.getContextPath() %>/mail/mailWrite"
 							class="btn btn-primary btn-block mb-3">새 메일 쓰기</a>
 
 						<div class="card">
@@ -115,7 +115,7 @@
 												</td>
 												<td class="mailbox-star"><a href="#"><i
 														class="fas fa-star text-warning"></i></a></td>
-												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/resources/mail/mailRead">Alexander
+												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/mail/mailRead">Alexander
 														Pierce</a></td>
 												<td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> -
 													Trying to find a solution to this problem...</td>
@@ -131,7 +131,7 @@
 												</td>
 												<td class="mailbox-star"><a href="#"><i
 														class="fas fa-star-o text-warning"></i></a></td>
-												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/resources/mail/mailRead">Alexander
+												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/mail/mailRead">Alexander
 														Pierce</a></td>
 												<td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> -
 													Trying to find a solution to this problem...</td>
@@ -148,7 +148,7 @@
 												</td>
 												<td class="mailbox-star"><a href="#"><i
 														class="fas fa-star-o text-warning"></i></a></td>
-												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/resources/mail/mailRead">Alexander
+												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/mail/mailRead">Alexander
 														Pierce</a></td>
 												<td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> -
 													Trying to find a solution to this problem...</td>
@@ -181,7 +181,7 @@
 												</td>
 												<td class="mailbox-star"><a href="#"><i
 														class="fas fa-star text-warning"></i></a></td>
-												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/resources/mail/mailRead">Alexander
+												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/mail/mailRead">Alexander
 														Pierce</a></td>
 												<td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> -
 													Trying to find a solution to this problem...</td>
@@ -198,7 +198,7 @@
 												</td>
 												<td class="mailbox-star"><a href="#"><i
 														class="fas fa-star-o text-warning"></i></a></td>
-												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/resources/mail/mailRead">Alexander
+												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/mail/mailRead">Alexander
 														Pierce</a></td>
 												<td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> -
 													Trying to find a solution to this problem...</td>
@@ -215,7 +215,7 @@
 												</td>
 												<td class="mailbox-star"><a href="#"><i
 														class="fas fa-star-o text-warning"></i></a></td>
-												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/resources/mail/mailRead">Alexander
+												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/mail/mailRead">Alexander
 														Pierce</a></td>
 												<td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> -
 													Trying to find a solution to this problem...</td>
@@ -232,7 +232,7 @@
 												</td>
 												<td class="mailbox-star"><a href="#"><i
 														class="fas fa-star text-warning"></i></a></td>
-												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/resources/mail/mailRead">Alexander
+												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/mail/mailRead">Alexander
 														Pierce</a></td>
 												<td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> -
 													Trying to find a solution to this problem...</td>
@@ -248,7 +248,7 @@
 												</td>
 												<td class="mailbox-star"><a href="#"><i
 														class="fas fa-star text-warning"></i></a></td>
-												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/resources/mail/mailRead">Alexander
+												<td class="mailbox-name"><a href="<%=request.getContextPath() %>mail/mailRead">Alexander
 														Pierce</a></td>
 												<td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> -
 													Trying to find a solution to this problem...</td>
@@ -264,7 +264,7 @@
 												</td>
 												<td class="mailbox-star"><a href="#"><i
 														class="fas fa-star-o text-warning"></i></a></td>
-												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/resources/mail/mailRead">Alexander
+												<td class="mailbox-name"><a href="<%=request.getContextPath() %>mail/mailRead">Alexander
 														Pierce</a></td>
 												<td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> -
 													Trying to find a solution to this problem...</td>
@@ -280,7 +280,7 @@
 												</td>
 												<td class="mailbox-star"><a href="#"><i
 														class="fas fa-star-o text-warning"></i></a></td>
-												<td class="mailbox-name"><a href="<%=request.getContextPath() %>/resources/mail/mailRead">Alexander
+												<td class="mailbox-name"><a href="<%=request.getContextPath() %>mail/mailRead">Alexander
 														Pierce</a></td>
 												<td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> -
 													Trying to find a solution to this problem...</td>

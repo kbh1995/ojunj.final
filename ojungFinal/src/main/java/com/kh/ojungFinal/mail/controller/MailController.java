@@ -14,4 +14,17 @@ public class MailController {
 		
 	}
 	
+	@RequestMapping("mailRead")
+	public String mailRead() {
+		return "mail/mailRead";
+		
+	}
+	
+	@RequestMapping("mailWrite")
+	public String mailWrite() {
+		return "mail/mailWrite";
+		
+	}
+	
+	
 }
