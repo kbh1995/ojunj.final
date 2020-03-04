@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>지출품의서 pdf</title>
+    <title></title>
     <style type="text/css">
         .tg {
             border-collapse: collapse;
@@ -96,30 +96,28 @@
             position: relative;
         }
 
-        #first-second{
+        #first-second {
             width: 50%;
             height: 100%;
             float: left;
             position: relative;
         }
+
         #first-third {
             width: 25%;
             height: 100%;
-            float: left; 
+            float: left;
         }
 
-
-        #third-first {
+        #center {
             width: 100%;
-            height: 100%;
-            float: left;
-            /* position: relative; */
+            height: 20%;
         }
     </style>
 </head>
 
 <body>
-    <h2 style="text-align: center;">품 의 서</h2>
+    <h2 style="text-align: center;">진료비지원신청서</h2>
 
     <div id="wrapper">
         <!-- 첫 번째 div -->
@@ -128,19 +126,19 @@
                 <table class="tg">
                     <tr>
                         <th class="tg-cly1">문서번호</th>
-                        <td style="width: 150px;">12</td>
+                        <td style="width: 150px;">10</td>
                     </tr>
                     <tr>
                         <th class="tg-cly1">작성일자</th>
-                        <td style="width: 150px;">2020/02/29</td>
+                        <td style="width: 150px;">2020/02/28</td>
                     </tr>
                     <tr>
                         <th class="tg-cly1">신청부서</th>
-                        <td style="width: 150px;">경영지원팀</td>
+                        <td style="width: 150px;">인사팀</td>
                     </tr>
                     <tr>
                         <th class="tg-0lax">신청자</th>
-                        <td style="width: 150px;">이혜선</td>
+                        <td style="width: 150px;">윤소희</td>
                     </tr>
                 </table>
             </div>
@@ -169,60 +167,45 @@
         </div>
         <hr>
         <!-- 두 번째 div -->
-        <div>
-            
-
+        <div id="center">
+            <div class="tg-wrap">
+                <table class="tg" style="text-align: center;">
+                    <tr>
+                        <th class="tg-cly1" style="text-align: center; width: 100px;">제목</th>
+                        <td style="width: 900px;">진료비 지원 신청서_윤소희</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-cly1" colspan="2">건강검진으로 인한 진료비 지원 신청합니다.</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
+        <hr>
         <!-- 세 번째 div -->
-        <div id="wrapper">
-            <div id="third-first" class="tg-wrap">
-                <table class="tg" style="width: 100%;">
+        <div>
+            <div class="tg-wrap">
+                <table class="tg">
                     <tr>
-                        <th class="tg-0pky" style="width: 70px;">제목</th>
-                        <td class="tg-0pky" style="width: 200px;"></td>
-                        <th class="tg-0pky" style="width: 70px;">최종결재자</th>
-                        <td class="tg-0lax" style="width: 200px;"></td>
+                        <th class="tg-cly1" style="width: 100px; text-align: center;">진료기관명</th>
+                        <td style="width: 900px;">분당서울대병원</td>
                     </tr>
                     <tr>
-                        <th class="tg-0pky" style="width: 90px;">결재번호</th>
-                        <td class="tg-0pky"></td>
-                        <th class="tg-0pky" style="width: 90px;">품의번호</th>
-                        <td class="tg-0lax"></td>
+                        <th class="tg-cly1" style="width: 100px; text-align: center;">병명</th>
+                        <td style="width: 900px;">건강검진</td>
                     </tr>
                     <tr>
-                        <th class="tg-0pky" style="width: 90px;">결재일</th>
-                        <td class="tg-0pky"></td>
-                        <th class="tg-0pky" style="width: 90px;">품의일</th>
-                        <td class="tg-0lax"></td>
+                        <th class="tg-0lax" style="width: 100px; text-align: center;">신청금액</th>
+                        <td style="width: 900px;">200000원</td>
                     </tr>
                     <tr>
-                        <th class="tg-0pky" colspan="4">결재자 부기사항(해당 부서장 및 상무 ● 전무)</th>
+                        <th class="tg-0lax" style="width: 100px; text-align: center;">본인부담금</th>
+                        <td style="width: 900px;">50000원</td>
                     </tr>
-                    <tr>
-                        <td class="tg-0lax" colspan="4" style="height: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <th class="tg-0pky" colspan="4">품 의 내 용</th>
-                    </tr>
-                    <tr>
-                        <td class="tg-0lax" colspan="4" style="height: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <th class="tg-0pky" colspan="4">지 시 사 항</th>
-                    </tr>
-                    <tr>
-                        <td class="tg-0lax" colspan="4" style="height: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <th class="tg-0pky" colspan="4" style="text-align: left;">※이 품의서는 기안자가 지정한 최종 결재자에게 필히 결재를 받아야 한다.</th>
-                    </tr>
-                  </table>
+                </table>
             </div>
 
         </div>
 
     </div>
 </body>
-
-</html>
