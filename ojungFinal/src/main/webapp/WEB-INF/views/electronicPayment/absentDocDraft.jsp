@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>(주) 오정상사 그룹웨어 - 전자결재ㅎㅎㄹ</title>
+<title>(주) 오정상사 그룹웨어 - 전자결재ㅎㅎㅇㅇㄹ</title>
 <!-- Tell the browser to be responsive to screen width -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Font Awesome -->
